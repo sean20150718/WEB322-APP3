@@ -65,9 +65,6 @@ safeHTML: function(context){
 }
 }));
 
-
-
-
 app.get('/', function(req, res) {
   res.redirect('/blog');
 });
