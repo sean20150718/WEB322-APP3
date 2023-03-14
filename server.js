@@ -218,6 +218,7 @@ app.get('/posts', (req, res) => {
 //       res.status(500).json({ error: err.message });
 //     });
 // });
+
 app.get('/post/:id', (req, res) => {
     const { id } = req.params;
   blogService.getPostById(id)
