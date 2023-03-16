@@ -1,5 +1,5 @@
 const fs = require('fs');
-const blogService = require('./blog-Service');
+
 const data = [
   {
     id: 1,
