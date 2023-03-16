@@ -24,6 +24,17 @@ const upload = multer();
 const storage = multer.memoryStorage();
 app.use(express.static("public"));
 //const upload = multer({ dest: "uploads/" });
+const { getAllPosts,
+getPublishedPosts,
+getCategories,
+getPosts, 
+getPublishedPostsSync, 
+getCategoriesSync,
+addPost,
+getPostsByCategory,
+getPostsByMinDate,
+getPostById,
+getPublishedPostsByCategory, } = require('./blog-service');
 cloudinary.config({
   cloud_name: 'dvogv4xnj',
   api_key: '372426185215898',
