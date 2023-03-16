@@ -1,13 +1,5 @@
 const fs = require('fs');
-
-const data = [
-  {
-    id: 1,
-    title: 'First post',
-    category: 1,
-    postDate: '2022-02-25',
-    published: true,
-  },]
+const data = [];
  const getPosts = () => {
    const postsData = fs.readFileSync('./data/posts.json');
    return JSON.parse(postsData);
