@@ -13,6 +13,7 @@ const data = [];
 //     return allPosts;
 //   }
 // };
+//add a line
 const getPublishedPostsSync = () => {
   const postsData = getPosts();
  return postsData.filter(post => post.published === true);
